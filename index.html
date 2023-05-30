@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <h4>
+          You have 5 seconds to memorize the positions of the shapes in the box.
+          Then drag the shapes into the correct place and submit to see if its a
+          match. Keep submitting until you get 100%.
+        </h4>
+        <button id="start">Start</button> 
+      </div>
+    </div>
+    <main>
+      <div class="wrap">
+        <h1 class="five">5</h1>
+        <h1 class="four">4</h1>
+        <h1 class="three">3</h1>
+        <h1 class="two">2</h1>
+        <h1 class="one">1</h1>
+        <h1 class="zero">0</h1>
+      </div>
+      <div class="container-wrap-wrap">
+        <div class="container">
+          <div class="square"></div>
+          <div class="circle"></div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="scroll"></div>
+        <button class="submit">submit</button> 
+      </div>
+      <div class="five-stages">
+        <div class="stage-one stage"><i class="fa-solid fa-check"></i></p></div>
+        <div class="stage-two stage"><p><i class="fa-solid fa-check"></i></p></div>
+        <div class="stage-three stage"><p><i class="fa-solid fa-check"></i></p></div> 
+        <div class="stage-four stage"><p><i class="fa-solid fa-check"></i></p></div>
+        <div class="stage-five stage"><p><i class="fa-solid fa-check"></i></p></div>     
+      </div>
+      <!-- ////////this is stage one -->
+      <div class="full-wrapper">
+        <div class="wrapper" id="container"></div> 
+        <div class="scroll">
+          <div class="square_el draggable"></div>
+          <div class="circle_el draggable"></div>
+          <div class="rectangle_el draggable"></div>
+        </div> 
+        <div class="actions">
+          <button class="submit" id="submit">submit</button>
+          <button id="next_btn" class="next-btn">Next</button>
+        </div>
+      </div>
+   <!-- ///////////this is end of stage one -->
+      <!-- /////stage two -->
+      <!-- <div class="stage-two-wrapper">
+        <div class="wrapper" id="container"></div>  
+        <div class="scroll">
+          <div class="square_el draggable"></div>
+          <div class="circle_el draggable"></div>
+          <div class="rectangle_el draggable"></div>
+          <div class="triangle draggable"></div>
+        </div>
+        <div class="actions">
+          <button class="submit" id="submit">submit</button>
+          <button id="next_btn" class="next-btn">Next</button>
+        </div>
+      </div> -->
+   <!-- end of stage two -->
+      
+       
+    </main>
+    <script src="https://kit.fontawesome.com/c3790f8a44.js" crossorigin="anonymous"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>

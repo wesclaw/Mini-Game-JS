@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: ghostwhite;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+main {
+  text-align: center;
+}
+
+.container {
+  border: 5px solid rgba(0, 0, 0, 0.671);
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  /* display: none; */
+  /* //////////// */
+} 
+
+.container-wrap-wrap {
+  /* display: none; */
+  /* ////////////////////// */
+}
+ 
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 255, 255, 0.671);
+  position: absolute;
+  right: 0;
+}
+.circle {
+  background-color: rgba(255, 192, 203, 0.733);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.rectangle {
+  width: 100px;
+  height: 150px;
+  background-color: rgba(190, 30, 190, 0.562);
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.842); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  /* /////////////////////////////// */
+}
+
+.modal-content {
+  width: 400px;
+  height: 400px;
+  background-color: wheat;
+  z-index: 1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.705);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.full-wrapper {
+  display: none;
+  /* //////////////////////////// */
+}
+
+.wrapper {
+  border: 5px solid rgba(0, 0, 0, 0.671); 
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+  position: relative;
+  /* display: none;  */
+  /* //////////////// */
+}
+
+.scroll {
+  width: 400px;
+  height: 150px;
+  border: 2px solid black;
+  justify-content: space-around;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.342);
+  display: flex;
+}
+
+.square_el {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 255, 255, 0.671);
+  cursor: pointer;
+}
+
+.circle_el {
+  background-color: rgba(255, 192, 203, 0.733);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.rectangle_el {
+  width: 100px;
+  height: 150px;
+  background-color: rgba(190, 30, 190, 0.562);
+  cursor: pointer; 
+}
+
+.next-btn {
+  display: none;
+  padding: 10px 20px; 
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.five-stages{
+  width: 400px;
+  height: 20px;
+  top: 2%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stage{
+  border: 1px solid black;
+  background-color: rgba(150, 119, 119, 0.384);
+  height: 20px;
+  width: 50px;
+  opacity: 30%;
+}
+
+/* ///////////// */
+
+.class-for-all-stages{
+  background-color: rgba(0, 255, 0, 0.568);
+  opacity: 100%;
+  border: none;
+}
+
+/* /////////// */
+
+.stage-two-wrapper{
+  display: none;
+  animation-name: from-left;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-duration: .5s;
+}
+
+@keyframes from-left{
+  from{transform: translateX(-200%)}
+  to{right: 100%} 
+}
+
+
+
+.triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid black; 
+
+}
