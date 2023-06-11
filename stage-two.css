@@ -15,6 +15,11 @@ main {
   text-align: center;
 }
 
+.five-stages .stage-one{
+  background-color: rgba(0, 255, 0, 0.582);
+  opacity: unset;
+}
+
 .container {
   border: 5px solid rgba(0, 0, 0, 0.671);
   width: 400px;
@@ -25,28 +30,31 @@ main {
   /* display: none; */
 } 
 
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 255, 255, 0.671);
+.triangle {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid black;
   position: absolute;
-  right: 0;
+  bottom: 0;
 }
-.circle {
-  background-color: rgba(255, 192, 203, 0.733);
+.small-circle {
+  background-color: brown;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.rectangle {
-  width: 100px;
-  height: 150px;
-  background-color: rgba(190, 30, 190, 0.562);
+.small-rectangle {
+  width: 30px;
+  height: 70px;
+  background-color: teal;
   position: absolute;
-  top: 0;
+  bottom: 30px;
+
 }
 
 h1 {
@@ -97,11 +105,6 @@ h1 {
   cursor: pointer;
 }
 
-.full-wrapper {
-  display: none;
-  /* //////////////////////////// */
-}
-
 .wrapper {
   border: 5px solid rgba(0, 0, 0, 0.671); 
   width: 400px;
@@ -109,38 +112,40 @@ h1 {
   margin-bottom: 20px;
   box-sizing: border-box; 
   position: relative;
-  /* display: none;  */
+  
   /* //////////////// */
 }
 
 .scroll {
   width: 400px;
-  height: 150px;
+  min-height: 70px;
   border: 2px solid black;
   justify-content: space-around;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.342);
   display: flex;
 }
 
-.square_el {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 255, 255, 0.671);
-  cursor: pointer;
+.triangle_el {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  
+  border-bottom: 50px solid black;
 }
 
-.circle_el {
-  background-color: rgba(255, 192, 203, 0.733);
+.small_circle_el {
+  background-color: brown;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   cursor: pointer;
 }
 
-.rectangle_el {
-  width: 100px;
-  height: 150px;
-  background-color: rgba(190, 30, 190, 0.562);
+.small_rectangle_el {
+  width: 30px;
+  height: 70px;
+  background-color: darkcyan;
   cursor: pointer; 
 }
 
@@ -184,9 +189,12 @@ h1 {
 
 .class-for-all-stages{
   background-color: rgba(0, 255, 0, 0.568);
-  opacity: 100%;
-  border: none;
 }
 
-/* /////////// */
+/* .container-wrap-wrap{
+  display: none;
+} */
 
+.full-wrapper{
+  display: none;
+}

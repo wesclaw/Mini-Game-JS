@@ -9,12 +9,10 @@ const container_wrap_wrap = document.querySelector('.container-wrap-wrap');
 const start = document.getElementById('start');
 const full_wrapper = document.querySelector('.full-wrapper');
 
-start.addEventListener('click', countdown);
+
 
 let timer = 6;
 
-function countdown(){
-  modal.style.display = 'none'
   time_text.style.display = 'block'
   setInterval(()=>{
     timer--
@@ -25,7 +23,7 @@ function countdown(){
       full_wrapper.style.display = 'block';
     }
   },1000)
-}
+
 
 const draggables = document.querySelectorAll('.draggable');
 const wrapper = document.getElementById('container');
@@ -81,11 +79,11 @@ draggables.forEach((draggable, index) => {
     const x = rect.left - containerRect.left;
     const y = rect.top - containerRect.top;
     console.log('Relative position:', x, y);
-    if (index === 0 && x <= 305 && x >= 290 && y <= 6 && y >= 4) {
+    if (index === 0 && x <= 6.0 && x >= 4.0 && y <= 350 && y >= 340) {
       blue = true;
-    } else if (index === 1 && x <= 300 && x >= 290 && y <= 299 && y >= 290) {
+    } else if (index === 1 && x <= 350 && x >= 320 && y <= 340 && y >= 320) {
       pink = true;
-    } else if (index === 2 && x <= 5.8 && x >= 3 && y <= 5.5 && y >= 4.5) {
+    } else if (index === 2 && x <= 6.5 && x >= 4 && y <= 310 && y >= 280) {
       purple = true;
     }
   }
@@ -94,13 +92,14 @@ draggables.forEach((draggable, index) => {
 const submit = document.getElementById('submit');
 submit.addEventListener('click', () => {
   const next_btn = document.getElementById('next_btn');
-  const stage_one = document.querySelector('.stage-one');
+  const stage_two = document.querySelector('.stage-two')
 
-  if (blue === true && pink === true && purple === true) {
+  if (pink === true && blue === true && purple === true) {
     submit.textContent = 'You scored 100%';
     submit.style.background = 'rgba(69, 180, 69, 0.664)';
     next_btn.style.display = 'flex';
-    stage_one.classList.add('class-for-all-stages');
+    stage_two.classList.add('class-for-all-stages');
+    stage_two.style.opacity = 'unset'
   } else if (pink === true && blue === true && purple === false) {
     submit.textContent = 'Score 90%';
   } else if (pink === false && blue === true && purple === true) {
@@ -118,7 +117,4 @@ submit.addEventListener('click', () => {
   } 
 });
 
-next_btn.addEventListener('click',()=>{
-  location.href = 'stage-two.html'
-})
 
