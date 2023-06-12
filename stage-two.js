@@ -83,7 +83,7 @@ draggables.forEach((draggable, index) => {
       blue = true;
     } else if (index === 1 && x <= 350 && x >= 320 && y <= 340 && y >= 320) {
       pink = true;
-    } else if (index === 2 && x <= 6.5 && x >= 4 && y <= 310 && y >= 280) {
+    } else if (index === 2 && x <= 6 && x >= 4.5 && y <= 300 && y >= 285) {
       purple = true;
     }
   }
