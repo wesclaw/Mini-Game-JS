@@ -152,10 +152,9 @@ h1 {
 
 .next-btn {
   display: none;
-  padding: 10px 20px; 
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
+  padding: 10px 38px; 
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .actions {
