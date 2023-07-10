@@ -1,15 +1,12 @@
-
-
-
 const time_text = document.getElementById('time_text')
 
-const modal = document.querySelector('.modal');
 const container_wrap_wrap = document.querySelector('.container-wrap-wrap');
 
 const start = document.getElementById('start');
 const full_wrapper = document.querySelector('.full-wrapper');
 
 const next_btn = document.getElementById('next_btn')
+
 
 let timer = 6;
 
@@ -25,6 +22,7 @@ let timer = 6;
   },1000)
 
 
+  
 const draggables = document.querySelectorAll('.draggable');
 const wrapper = document.getElementById('container');
 
@@ -68,6 +66,8 @@ draggables.forEach((draggable, index) => {
     const y = rect.top - containerRect.top;
     console.log('Relative position:', x, y);
   }
+
+  ///////start here with getting the pos. console page brings up the box and pushes it so will need to spend even more time finding correct pos
 
   function stopElementDrag() {
     document.removeEventListener('mousemove', elementDrag);

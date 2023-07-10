@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: ghostwhite;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  overflow-y: scroll;
+}
+
+main {
+  text-align: center;
+}
+
+.five-stages .stage-one{
+  background-color: rgba(0, 255, 0, 0.582);
+  opacity: unset;
+}
+
+.container {
+  border: 5px solid rgba(0, 0, 0, 0.671);
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  /* display: none; */
+} 
+
+.triangle {
+  position: absolute;
+  background-color: rgb(104, 139, 160);
+  width: 300px; 
+  height: 100px; 
+}
+.small-circle {
+  background-color: rgb(165, 165, 52);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.small-rectangle {
+  width: 100px;
+  height: 290px;
+  background-color: hotpink;
+  position: absolute;
+  bottom: 0px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+#start {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.scroll-demo{
+  min-height: 70px;
+  width: 400px;
+  border: 2px solid black;
+  justify-content: space-around;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.342);
+  display: flex;
+}
+
+.wrapper {
+  border: 5px solid rgba(0, 0, 0, 0.671); 
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+  position: relative;
+  
+  /* //////////////// */
+}
+
+.scroll {
+  width: 400px;
+  max-height: 150px;
+  border: 2px solid black;
+  justify-content: space-around;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.342);
+  /* display: flex; */
+  overflow: scroll;
+}
+
+.triangle_el {
+  background-color: rgb(104, 139, 160);
+  width: 300px; 
+  height: 100px; 
+}
+
+.small_circle_el {
+  background-color: rgb(165, 165, 52);
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.small_rectangle_el {
+  width: 100px;
+  height: 290px;
+  background-color: hotpink;
+  cursor: pointer; 
+}
+
+.next-btn {
+  display: none;
+  padding: 10px 20px; 
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.five-stages{
+  width: 400px;
+  height: 20px;
+  top: 2%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stage{
+  border: 1px solid black;
+  background-color: rgba(150, 119, 119, 0.384);
+  height: 20px;
+  width: 50px;
+  opacity: 30%;
+}
+
+/* ///////////// */
+
+.class-for-all-stages{
+  background-color: rgba(0, 255, 0, 0.568);
+}
+
+.stage-two{
+  background-color: rgba(0, 255, 0, 0.568);
+  opacity: 1;
+}
+
+/* .container-wrap-wrap{
+  display: none;
+} */
+
+.full-wrapper{
+  display: none;
+}
