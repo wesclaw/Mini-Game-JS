@@ -8,18 +8,18 @@ const full_wrapper = document.querySelector('.full-wrapper');
 const next_btn = document.getElementById('next_btn')
 
 
-let timer = 6;
+// let timer = 6;
 
-  time_text.style.display = 'block'
-  setInterval(()=>{
-    timer--
-    time_text.textContent = timer
-    if(timer<1){
-      time_text.style.display = 'none'
-      container_wrap_wrap.style.display = 'none';
-      full_wrapper.style.display = 'block';
-    }
-  },1000)
+//   time_text.style.display = 'block'
+//   setInterval(()=>{
+//     timer--
+//     time_text.textContent = timer
+//     if(timer<1){
+//       time_text.style.display = 'none'
+//       container_wrap_wrap.style.display = 'none';
+//       full_wrapper.style.display = 'block';
+//     }
+//   },1000)
 
 
   
@@ -79,7 +79,7 @@ draggables.forEach((draggable, index) => {
     const x = rect.left - containerRect.left;
     const y = rect.top - containerRect.top;
     console.log('Relative position:', x, y);
-    if (index === 0 && x <= 6.0 && x >= 4.0 && y <= 350 && y >= 340) {
+    if (index === 0 && x <= 6.5 && x >= 4.5 && y <= 75.5 && y >= 65.0) {
       blue = true;
     } else if (index === 1 && x <= 350 && x >= 320 && y <= 340 && y >= 320) {
       pink = true;
@@ -118,6 +118,6 @@ submit.addEventListener('click', () => {
 });
 
 next_btn.addEventListener('click',()=>{
-  location.href = 'stage-three.html'
+  location.href = 'stage-four.html'
 })
 
