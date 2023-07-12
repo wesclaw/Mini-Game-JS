@@ -8,18 +8,18 @@ const full_wrapper = document.querySelector('.full-wrapper');
 const next_btn = document.getElementById('next_btn')
 
 
-// let timer = 6;
+let timer = 6;
 
-//   time_text.style.display = 'block'
-//   setInterval(()=>{
-//     timer--
-//     time_text.textContent = timer
-//     if(timer<1){
-//       time_text.style.display = 'none'
-//       container_wrap_wrap.style.display = 'none';
-//       full_wrapper.style.display = 'block';
-//     }
-//   },1000)
+  time_text.style.display = 'block'
+  setInterval(()=>{
+    timer--
+    time_text.textContent = timer
+    if(timer<1){
+      time_text.style.display = 'none'
+      container_wrap_wrap.style.display = 'none';
+      full_wrapper.style.display = 'block';
+    }
+  },1000)
 
 
   
@@ -79,11 +79,11 @@ draggables.forEach((draggable, index) => {
     const x = rect.left - containerRect.left;
     const y = rect.top - containerRect.top;
     console.log('Relative position:', x, y);
-    if (index === 0 && x <= 6.5 && x >= 4.5 && y <= 75.5 && y >= 65.0) {
+    if (index === 0 && x <= 6.5 && x >= 4.5 && y <= 7.5 && y >= 3.5) {
       blue = true;
-    } else if (index === 1 && x <= 350 && x >= 320 && y <= 340 && y >= 320) {
+    } else if (index === 1 && x <= 210.5 && x >= 185.5 && y <= 205.5 && y >= 185.5) {
       pink = true;
-    } else if (index === 2 && x <= 6 && x >= 4.5 && y <= 300 && y >= 285) {
+    } else if (index === 2 && x <= 6.6 && x >= 3.5 && y <= 115.5 && y >= 90.5) {
       purple = true;
     }
   }
@@ -92,14 +92,14 @@ draggables.forEach((draggable, index) => {
 const submit = document.getElementById('submit');
 submit.addEventListener('click', () => {
   const next_btn = document.getElementById('next_btn');
-  const stage_two = document.querySelector('.stage-two')
+  const stage_three = document.querySelector('.stage-three')
 
   if (pink === true && blue === true && purple === true) {
     submit.textContent = 'You scored 100%';
     submit.style.background = 'rgba(69, 180, 69, 0.664)';
     next_btn.style.display = 'flex';
-    stage_two.classList.add('class-for-all-stages');
-    stage_two.style.opacity = 'unset'
+    stage_three.classList.add('class-for-all-stages');
+    stage_three.style.opacity = 'unset'
   } else if (pink === true && blue === true && purple === false) {
     submit.textContent = 'Score 90%';
   } else if (pink === false && blue === true && purple === true) {

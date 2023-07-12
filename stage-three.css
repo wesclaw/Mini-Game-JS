@@ -96,6 +96,7 @@ h1 {
 .scroll {
   width: 400px;
   max-height: 150px;
+  min-height: 150px;
   border: 2px solid black;
   justify-content: space-around;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.342);
